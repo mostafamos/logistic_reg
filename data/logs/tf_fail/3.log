@@ -1,0 +1,1 @@
+2025-08-08T06:15:10.221Z [ERROR] provider.azurerm: Error: AuthorizationFailed: Client 'xxxx-xxxx' is not authorized to perform action 'Microsoft.Network/virtualNetworks/read' over scope '/subscriptions/.../resourceGroups/rg-sec' or the scope is invalid.

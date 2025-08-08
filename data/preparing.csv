@@ -1,0 +1,4536 @@
+id,group_id,label,tf_snippet
+1.log::f00,1.log,0,"resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-i0""
+  address_space       = [""10.1.0.0/24""]
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-y6""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-dp""
+  resource_group_name = ""rg-prod-eastus-bh""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.4.3.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-sa""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-hx""
+
+  ip_configuration {
+    name = ""internal-th""
+    private_ip_address_allocation = ""eastus""
+    # intentionally no subnet reference here
+  }
+}
+# eof
+"
+1.log::f01,1.log,0,"resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-h1""
+  address_space       = [""10.6.5.0/24""]
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-dn""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-mm""
+  resource_group_name = ""rg-prod-eastus-jb""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.4.2.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-qe""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-7c""
+
+  ip_configuration {
+    name = ""internal-kw""
+    private_ip_address_allocation = ""eastus2""
+    # intentionally no subnet reference here
+  }
+}
+# eof
+"
+1.log::f02,1.log,0,"resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-5n""
+  address_space       = [""10.3.4.0/24""]
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-q4""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-fm""
+  resource_group_name = ""rg-prod-eastus-yz""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.3.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-yc""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-wt""
+
+  ip_configuration {
+    name = ""internal-iq""
+    private_ip_address_allocation = ""eastus2""
+    # intentionally no subnet reference here
+  }
+}"
+1.log::f03,1.log,0,"# generated 2025-08-08T07:16:18.516907+00:00
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-oc""
+  address_space       = [""10.0.3.0/24""]
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-6u""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-zh""
+  resource_group_name = ""rg-prod-eastus-r5""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.0.5.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-xf""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-f0""
+
+  ip_configuration {
+    name = ""internal-t0""
+    private_ip_address_allocation = ""westeurope""
+    # intentionally no subnet reference here
+  }
+}"
+1.log::f04,1.log,0,"# generated 2025-08-08T07:16:18.516907+00:00
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-14""
+  address_space       = [""10.2.8.0/24""]
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-ff""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-yv""
+  resource_group_name = ""rg-prod-eastus-nv""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.7.1.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-qj""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-t7""
+
+  ip_configuration {
+    name = ""internal-ye""
+    private_ip_address_allocation = ""japaneast""
+    # intentionally no subnet reference here
+  }
+}
+# eof
+"
+1.log::f05,1.log,0,"# generated 2025-08-08T07:16:18.517918+00:00
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-1s""
+  address_space       = [""10.7.0.0/24""]
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-dw""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-4s""
+  resource_group_name = ""rg-prod-eastus-hn""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.4.8.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-f8""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-77""
+
+  ip_configuration {
+    name = ""internal-vr""
+    private_ip_address_allocation = ""japaneast""
+    # intentionally no subnet reference here
+  }
+}
+# eof
+"
+1.log::f06,1.log,0,"resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-39""
+  address_space       = [""10.9.1.0/24""]
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-te""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-x8""
+  resource_group_name = ""rg-prod-eastus-fs""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.7.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-v8""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-71""
+
+  ip_configuration {
+    name = ""internal-yz""
+    private_ip_address_allocation = ""westeurope""
+    # intentionally no subnet reference here
+  }
+}
+# eof
+"
+1.log::f07,1.log,0,"# generated 2025-08-08T07:16:18.517918+00:00
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-at""
+  address_space       = [""10.3.3.0/24""]
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-va""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-zc""
+  resource_group_name = ""rg-prod-eastus-cb""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.5.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ls""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-kr""
+
+  ip_configuration {
+    name = ""internal-t0""
+    private_ip_address_allocation = ""westeurope""
+    # intentionally no subnet reference here
+  }
+}
+# eof
+"
+1.log::f08,1.log,0,"# generated 2025-08-08T07:16:18.517918+00:00
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-xm""
+  address_space       = [""10.6.3.0/24""]
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-o5""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-bx""
+  resource_group_name = ""rg-prod-eastus-xc""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.1.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-02""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-dg""
+
+  ip_configuration {
+    name = ""internal-tf""
+    private_ip_address_allocation = ""westeurope""
+    # intentionally no subnet reference here
+  }
+}"
+1.log::f09,1.log,0,"resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-xt""
+  address_space       = [""10.7.8.0/24""]
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-ad""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-1i""
+  resource_group_name = ""rg-prod-eastus-or""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.0.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-56""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-fa""
+
+  ip_configuration {
+    name = ""internal-o7""
+    private_ip_address_allocation = ""westeurope""
+    # intentionally no subnet reference here
+  }
+}"
+1.log::f10,1.log,0,"resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-k8""
+  address_space       = [""10.8.7.0/24""]
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-ut""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-0c""
+  resource_group_name = ""rg-prod-eastus-vs""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.3.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-4f""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-8c""
+
+  ip_configuration {
+    name = ""internal-gv""
+    private_ip_address_allocation = ""eastus""
+    # intentionally no subnet reference here
+  }
+}"
+1.log::f11,1.log,0,"# generated 2025-08-08T07:16:18.518919+00:00
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-cx""
+  address_space       = [""10.9.9.0/24""]
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-ul""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-prod-jy""
+  resource_group_name = ""rg-prod-eastus-lj""
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.0.9.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ex""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-q7""
+
+  ip_configuration {
+    name = ""internal-7a""
+    private_ip_address_allocation = ""eastus""
+    # intentionally no subnet reference here
+  }
+}
+# eof
+"
+2.log::f00,2.log,0,"resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-75""
+  resource_group_name = ""rg-app-eastus-5n""
+  virtual_network_name = ""vnet-app-f4""
+  address_prefixes     = [""10.4.2.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}"
+2.log::f01,2.log,0,"resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-yt""
+  resource_group_name = ""rg-app-eastus-7d""
+  virtual_network_name = ""vnet-app-5j""
+  address_prefixes     = [""10.8.0.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}"
+2.log::f02,2.log,0,"# generated 2025-08-08T07:16:18.518919+00:00
+resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-kh""
+  resource_group_name = ""rg-app-eastus-my""
+  virtual_network_name = ""vnet-app-4s""
+  address_prefixes     = [""10.2.4.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}"
+2.log::f03,2.log,0,"# generated 2025-08-08T07:16:18.518919+00:00
+resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-w3""
+  resource_group_name = ""rg-app-eastus-bm""
+  virtual_network_name = ""vnet-app-e9""
+  address_prefixes     = [""10.0.1.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}
+# eof
+"
+2.log::f04,2.log,0,"resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-ac""
+  resource_group_name = ""rg-app-eastus-56""
+  virtual_network_name = ""vnet-app-t4""
+  address_prefixes     = [""10.6.8.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}
+# eof
+"
+2.log::f05,2.log,0,"# generated 2025-08-08T07:16:18.518919+00:00
+resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-l6""
+  resource_group_name = ""rg-app-eastus-24""
+  virtual_network_name = ""vnet-app-6h""
+  address_prefixes     = [""10.2.0.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}
+# eof
+"
+2.log::f06,2.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-90""
+  resource_group_name = ""rg-app-eastus-7i""
+  virtual_network_name = ""vnet-app-f2""
+  address_prefixes     = [""10.8.6.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}
+# eof
+"
+2.log::f07,2.log,0,"resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-2o""
+  resource_group_name = ""rg-app-eastus-y0""
+  virtual_network_name = ""vnet-app-if""
+  address_prefixes     = [""10.2.5.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}
+# eof
+"
+2.log::f08,2.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-i3""
+  resource_group_name = ""rg-app-eastus-qk""
+  virtual_network_name = ""vnet-app-2i""
+  address_prefixes     = [""10.0.7.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}
+# eof
+"
+2.log::f09,2.log,0,"resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-58""
+  resource_group_name = ""rg-app-eastus-kx""
+  virtual_network_name = ""vnet-app-o9""
+  address_prefixes     = [""10.5.4.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}"
+2.log::f10,2.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-g8""
+  resource_group_name = ""rg-app-eastus-jd""
+  virtual_network_name = ""vnet-app-p0""
+  address_prefixes     = [""10.1.4.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}"
+2.log::f11,2.log,0,"resource ""azurerm_subnet"" ""web"" {
+  name = ""web-subnet-nu""
+  resource_group_name = ""rg-app-eastus-jz""
+  virtual_network_name = ""vnet-app-a7""
+  address_prefixes     = [""10.8.1.0/24""]
+}
+
+# Association references a route table that is not defined
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  route_table_id = azurerm_route_table.rt-app.id
+}"
+3.log::f00,3.log,0,"provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-0y""
+  resource_group_name = ""rg-sec-nc""
+}
+# eof
+"
+3.log::f01,3.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-l4""
+  resource_group_name = ""rg-sec-zk""
+}
+# eof
+"
+3.log::f02,3.log,0,"provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-ok""
+  resource_group_name = ""rg-sec-ep""
+}"
+3.log::f03,3.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-6w""
+  resource_group_name = ""rg-sec-kt""
+}
+# eof
+"
+3.log::f04,3.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-pu""
+  resource_group_name = ""rg-sec-xq""
+}
+# eof
+"
+3.log::f05,3.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-r6""
+  resource_group_name = ""rg-sec-2g""
+}"
+3.log::f06,3.log,0,"provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-wm""
+  resource_group_name = ""rg-sec-31""
+}
+# eof
+"
+3.log::f07,3.log,0,"provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-ha""
+  resource_group_name = ""rg-sec-ir""
+}
+# eof
+"
+3.log::f08,3.log,0,"# generated 2025-08-08T07:16:18.520198+00:00
+provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-ow""
+  resource_group_name = ""rg-sec-gz""
+}
+# eof
+"
+3.log::f09,3.log,0,"# generated 2025-08-08T07:16:18.521557+00:00
+provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-xa""
+  resource_group_name = ""rg-sec-11""
+}
+# eof
+"
+3.log::f10,3.log,0,"# generated 2025-08-08T07:16:18.521557+00:00
+provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-g8""
+  resource_group_name = ""rg-sec-sb""
+}"
+3.log::f11,3.log,0,"provider ""azurerm"" {
+  features {}
+  # likely missing/invalid credentials or wrong scope
+}
+
+data ""azurerm_virtual_network"" ""target"" {
+  name = ""vnet-sec-q2""
+  resource_group_name = ""rg-sec-y9""
+}"
+4.log::f00,4.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-36""
+  location = ""westeurope""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-p6""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-qf""
+  address_prefixes     = [""10.7.9.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5q""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-14""
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-j1""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-ri""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+4.log::f01,4.log,0,"# generated 2025-08-08T07:16:18.521557+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-6c""
+  location = ""eastus""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-fn""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-fh""
+  address_prefixes     = [""10.5.5.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ol""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-qc""
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-3o""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-18""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+4.log::f02,4.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-14""
+  location = ""eastus2""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-8p""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-0t""
+  address_prefixes     = [""10.5.4.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-vh""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-hp""
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-bm""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-yo""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+4.log::f03,4.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-6v""
+  location = ""westeurope""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-xd""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-p5""
+  address_prefixes     = [""10.8.0.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-gj""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-lq""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-m5""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-k8""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+4.log::f04,4.log,0,"# generated 2025-08-08T07:16:18.522871+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-9m""
+  location = ""japaneast""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-x2""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-x1""
+  address_prefixes     = [""10.8.0.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-8h""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-af""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-ey""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-uh""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+4.log::f05,4.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-8d""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-al""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-y8""
+  address_prefixes     = [""10.1.2.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-oz""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-cy""
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-wd""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-14""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+4.log::f06,4.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-tx""
+  location = ""japaneast""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-cx""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-ap""
+  address_prefixes     = [""10.0.5.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-rp""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-n6""
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-qf""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-gs""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+4.log::f07,4.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-p0""
+  location = ""eastus2""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-j4""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-3d""
+  address_prefixes     = [""10.7.7.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5i""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-qv""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-nb""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-4g""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+4.log::f08,4.log,0,"# generated 2025-08-08T07:16:18.522871+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-us""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-gi""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-ot""
+  address_prefixes     = [""10.9.4.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ir""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-zq""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-ak""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-oi""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+4.log::f09,4.log,0,"# generated 2025-08-08T07:16:18.523879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-lz""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-jj""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-eg""
+  address_prefixes     = [""10.6.8.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-et""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-1g""
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-hr""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-09""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+4.log::f10,4.log,0,"# generated 2025-08-08T07:16:18.523879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-ig""
+  location = ""westeurope""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-at""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-j9""
+  address_prefixes     = [""10.3.4.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-tz""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-e5""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-r5""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-uq""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+4.log::f11,4.log,0,"# generated 2025-08-08T07:16:18.523879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-3o""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-cw""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-bf""
+  address_prefixes     = [""10.7.1.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-uk""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-9e""
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-1v""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-2i""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+5.log::f00,5.log,0,"# generated 2025-08-08T07:16:18.524880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-kw""
+  location = ""japaneast""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-v0""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-8h""
+  address_prefixes     = [""10.9.6.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-hx""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-fg""
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-ca""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-qv""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+5.log::f01,5.log,0,"# generated 2025-08-08T07:16:18.524880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-y7""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-2w""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-x7""
+  address_prefixes     = [""10.7.1.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-pt""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-x6""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-3c""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-fl""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+5.log::f02,5.log,0,"# generated 2025-08-08T07:16:18.524880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-7s""
+  location = ""japaneast""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-rc""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-bp""
+  address_prefixes     = [""10.4.6.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-lj""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-d8""
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-4u""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-89""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+5.log::f03,5.log,0,"# generated 2025-08-08T07:16:18.524880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-x6""
+  location = ""westeurope""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-gv""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-wr""
+  address_prefixes     = [""10.7.8.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-dm""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-ly""
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-4l""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-yk""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+5.log::f04,5.log,0,"# generated 2025-08-08T07:16:18.525880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-e1""
+  location = ""eastus2""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-53""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-a5""
+  address_prefixes     = [""10.4.5.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-qb""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-sw""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-rp""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-bj""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+5.log::f05,5.log,0,"# generated 2025-08-08T07:16:18.525880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-9v""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-if""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-tt""
+  address_prefixes     = [""10.1.0.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-d9""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-6q""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-e3""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-rz""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+5.log::f06,5.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-qf""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-gv""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-0e""
+  address_prefixes     = [""10.7.3.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-c1""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-4m""
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-2j""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-a0""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+5.log::f07,5.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-tm""
+  location = ""westeurope""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-tt""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-ql""
+  address_prefixes     = [""10.2.7.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-gz""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-ui""
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-1b""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-0z""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+5.log::f08,5.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-8e""
+  location = ""japaneast""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-8l""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-d4""
+  address_prefixes     = [""10.2.7.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-d6""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-af""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-58""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-c2""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+5.log::f09,5.log,0,"# generated 2025-08-08T07:16:18.526880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-44""
+  location = ""eastus""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-nl""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-z1""
+  address_prefixes     = [""10.1.5.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5b""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-cw""
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-79""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-0p""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+5.log::f10,5.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-lc""
+  location = ""eastus2""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-mp""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-io""
+  address_prefixes     = [""10.0.0.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-yg""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-gv""
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-ny""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-ru""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}
+# eof
+"
+5.log::f11,5.log,0,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-compute-eastus2-6y""
+  location = ""uksouth""
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-compute-fp""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = ""vnet-main-mv""
+  address_prefixes     = [""10.0.7.0/24""]
+}
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-xp""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-j4""
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_linux_virtual_machine"" ""vm"" {
+  name = ""vm-compute-01-hn""
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.rg.location
+  size                  = ""Standard_D16s_v5""
+  admin_username = ""azureuser-ri""
+  network_interface_ids = [azurerm_network_interface.nic.id]
+}"
+6.log::p00,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ju""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-y0""
+
+  ip_configuration {
+    name = ""internal-bv""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-r6""
+  resource_group_name = ""rg-prod-eastus-k2""
+  virtual_network_name = ""vnet-main-vm""
+  address_prefixes     = [""10.0.6.0/24""]
+}"
+6.log::p01,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-2b""
+  location = ""westeurope""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-ne""
+  address_space       = [""10.2.1.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-6l""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.0.4.0/24""]
+}
+# eof
+"
+6.log::p02,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-sj""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-f6""
+
+  ip_configuration {
+    name = ""internal-78""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-k5""
+  resource_group_name = ""rg-prod-eastus-2q""
+  virtual_network_name = ""vnet-main-c1""
+  address_prefixes     = [""10.5.8.0/24""]
+}"
+6.log::p03,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-at""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-qy""
+
+  ip_configuration {
+    name = ""internal-yv""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-37""
+  resource_group_name = ""rg-prod-eastus-di""
+  virtual_network_name = ""vnet-main-a5""
+  address_prefixes     = [""10.1.6.0/24""]
+}
+# eof
+"
+6.log::p04,6.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-f8""
+  location = ""uksouth""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-kr""
+  address_space       = [""10.7.4.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-d5""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.6.1.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-eq""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-y0""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}"
+6.log::p05,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-w7""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-ky""
+
+  ip_configuration {
+    name = ""internal-hq""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-in""
+  resource_group_name = ""rg-prod-eastus-9n""
+  virtual_network_name = ""vnet-main-6x""
+  address_prefixes     = [""10.1.7.0/24""]
+}"
+6.log::p06,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-xv""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-a2""
+
+  ip_configuration {
+    name = ""internal-ie""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-uc""
+  resource_group_name = ""rg-prod-eastus-1h""
+  virtual_network_name = ""vnet-main-h5""
+  address_prefixes     = [""10.1.3.0/24""]
+}"
+6.log::p07,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-t2""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-d5""
+
+  ip_configuration {
+    name = ""internal-em""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-2v""
+  resource_group_name = ""rg-prod-eastus-aj""
+  virtual_network_name = ""vnet-main-ep""
+  address_prefixes     = [""10.2.2.0/24""]
+}"
+6.log::p08,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-qh""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-w0""
+
+  ip_configuration {
+    name = ""internal-6x""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-kx""
+  resource_group_name = ""rg-prod-eastus-b9""
+  virtual_network_name = ""vnet-main-4p""
+  address_prefixes     = [""10.9.1.0/24""]
+}
+# eof
+"
+6.log::p09,6.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-ew""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-vz""
+  address_space       = [""10.5.9.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-nv""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.1.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-ks""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-p2""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+# eof
+"
+6.log::p10,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-mq""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-od""
+
+  ip_configuration {
+    name = ""internal-px""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-nf""
+  resource_group_name = ""rg-prod-eastus-7c""
+  virtual_network_name = ""vnet-main-3d""
+  address_prefixes     = [""10.3.6.0/24""]
+}"
+6.log::p11,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-le""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-mx""
+
+  ip_configuration {
+    name = ""internal-15""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-z8""
+  resource_group_name = ""rg-prod-eastus-vm""
+  virtual_network_name = ""vnet-main-uh""
+  address_prefixes     = [""10.8.8.0/24""]
+}
+# eof
+"
+6.log::p12,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-1u""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-34""
+
+  ip_configuration {
+    name = ""internal-93""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-wx""
+  resource_group_name = ""rg-prod-eastus-a7""
+  virtual_network_name = ""vnet-main-3j""
+  address_prefixes     = [""10.5.1.0/24""]
+}
+# eof
+"
+6.log::p13,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-gf""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-xc""
+
+  ip_configuration {
+    name = ""internal-08""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-dt""
+  resource_group_name = ""rg-prod-eastus-nq""
+  virtual_network_name = ""vnet-main-fl""
+  address_prefixes     = [""10.5.0.0/24""]
+}"
+6.log::p14,6.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-jx""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-rp""
+  address_space       = [""10.2.9.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-j1""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.0.1.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-ep""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}"
+6.log::p15,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-h9""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-bh""
+
+  ip_configuration {
+    name = ""internal-81""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-1k""
+  resource_group_name = ""rg-prod-eastus-er""
+  virtual_network_name = ""vnet-main-pe""
+  address_prefixes     = [""10.4.0.0/24""]
+}"
+6.log::p16,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5b""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-a7""
+
+  ip_configuration {
+    name = ""internal-5u""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-uz""
+  resource_group_name = ""rg-prod-eastus-pe""
+  virtual_network_name = ""vnet-main-al""
+  address_prefixes     = [""10.1.6.0/24""]
+}"
+6.log::p17,6.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-vs""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-ol""
+  address_space       = [""10.6.1.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-ml""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.3.6.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-gs""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-es""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}"
+6.log::p18,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-hv""
+  location = ""uksouth""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-1x""
+  address_space       = [""10.3.1.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-g1""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.4.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-r1""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}"
+6.log::p19,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5w""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-fc""
+
+  ip_configuration {
+    name = ""internal-pk""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-jc""
+  resource_group_name = ""rg-prod-eastus-sl""
+  virtual_network_name = ""vnet-main-qc""
+  address_prefixes     = [""10.9.5.0/24""]
+}"
+6.log::p20,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-qt""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-26""
+  address_space       = [""10.9.9.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-q3""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.8.6.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-xl""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-rf""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}"
+6.log::p21,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-xb""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-z9""
+
+  ip_configuration {
+    name = ""internal-sv""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-n7""
+  resource_group_name = ""rg-prod-eastus-n1""
+  virtual_network_name = ""vnet-main-yb""
+  address_prefixes     = [""10.1.8.0/24""]
+}"
+6.log::p22,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-0x""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-65""
+
+  ip_configuration {
+    name = ""internal-mu""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-fm""
+  resource_group_name = ""rg-prod-eastus-8z""
+  virtual_network_name = ""vnet-main-ov""
+  address_prefixes     = [""10.4.4.0/24""]
+}"
+6.log::p23,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-dy""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-sa""
+
+  ip_configuration {
+    name = ""internal-l8""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-m1""
+  resource_group_name = ""rg-prod-eastus-g9""
+  virtual_network_name = ""vnet-main-fk""
+  address_prefixes     = [""10.2.8.0/24""]
+}"
+6.log::p24,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5w""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-vf""
+
+  ip_configuration {
+    name = ""internal-gy""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-w6""
+  resource_group_name = ""rg-prod-eastus-zb""
+  virtual_network_name = ""vnet-main-nz""
+  address_prefixes     = [""10.0.5.0/24""]
+}"
+6.log::p25,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-i8""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-26""
+
+  ip_configuration {
+    name = ""internal-gy""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-up""
+  resource_group_name = ""rg-prod-eastus-12""
+  virtual_network_name = ""vnet-main-sp""
+  address_prefixes     = [""10.3.8.0/24""]
+}
+# eof
+"
+6.log::p26,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5t""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-d4""
+
+  ip_configuration {
+    name = ""internal-4k""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-1j""
+  resource_group_name = ""rg-prod-eastus-6f""
+  virtual_network_name = ""vnet-main-p8""
+  address_prefixes     = [""10.0.7.0/24""]
+}"
+6.log::p27,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-si""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-9n""
+
+  ip_configuration {
+    name = ""internal-b7""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-4x""
+  resource_group_name = ""rg-prod-eastus-2e""
+  virtual_network_name = ""vnet-main-k3""
+  address_prefixes     = [""10.0.6.0/24""]
+}
+# eof
+"
+6.log::p28,6.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-t0""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-se""
+  address_space       = [""10.0.4.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-kk""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.3.2.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-bp""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-2q""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+# eof
+"
+6.log::p29,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-zk""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-am""
+
+  ip_configuration {
+    name = ""internal-ug""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-ys""
+  resource_group_name = ""rg-prod-eastus-m8""
+  virtual_network_name = ""vnet-main-t2""
+  address_prefixes     = [""10.9.3.0/24""]
+}"
+6.log::p30,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-mc""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-ix""
+  address_space       = [""10.6.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-du""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.4.0.0/24""]
+}
+# eof
+"
+6.log::p31,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-9r""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-ge""
+
+  ip_configuration {
+    name = ""internal-z7""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-bh""
+  resource_group_name = ""rg-prod-eastus-25""
+  virtual_network_name = ""vnet-main-ll""
+  address_prefixes     = [""10.2.7.0/24""]
+}
+# eof
+"
+6.log::p32,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-5l""
+  location = ""westeurope""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-en""
+  address_space       = [""10.3.4.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-60""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.5.0.0/24""]
+}
+# eof
+"
+6.log::p33,6.log,1,"# generated 2025-08-08T07:16:18.527879+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-jc""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-pp""
+
+  ip_configuration {
+    name = ""internal-9g""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-kd""
+  resource_group_name = ""rg-prod-eastus-lk""
+  virtual_network_name = ""vnet-main-qz""
+  address_prefixes     = [""10.5.8.0/24""]
+}
+# eof
+"
+6.log::p34,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-j9""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-8c""
+
+  ip_configuration {
+    name = ""internal-wn""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-2y""
+  resource_group_name = ""rg-prod-eastus-8f""
+  virtual_network_name = ""vnet-main-v2""
+  address_prefixes     = [""10.9.6.0/24""]
+}"
+6.log::p35,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-8b""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-fq""
+
+  ip_configuration {
+    name = ""internal-np""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-ce""
+  resource_group_name = ""rg-prod-eastus-nl""
+  virtual_network_name = ""vnet-main-k8""
+  address_prefixes     = [""10.5.6.0/24""]
+}
+# eof
+"
+6.log::p36,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-1z""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-hw""
+
+  ip_configuration {
+    name = ""internal-y9""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-he""
+  resource_group_name = ""rg-prod-eastus-cg""
+  virtual_network_name = ""vnet-main-z9""
+  address_prefixes     = [""10.1.4.0/24""]
+}"
+6.log::p37,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-z7""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-w2""
+
+  ip_configuration {
+    name = ""internal-se""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-he""
+  resource_group_name = ""rg-prod-eastus-2a""
+  virtual_network_name = ""vnet-main-tn""
+  address_prefixes     = [""10.4.2.0/24""]
+}
+# eof
+"
+6.log::p38,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-s1""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-3c""
+
+  ip_configuration {
+    name = ""internal-9x""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-qy""
+  resource_group_name = ""rg-prod-eastus-m5""
+  virtual_network_name = ""vnet-main-2x""
+  address_prefixes     = [""10.6.7.0/24""]
+}"
+6.log::p39,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-fl""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-zm""
+  address_space       = [""10.1.8.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-76""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.4.0/24""]
+}"
+6.log::p40,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ww""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-dx""
+
+  ip_configuration {
+    name = ""internal-vu""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-gw""
+  resource_group_name = ""rg-prod-eastus-6m""
+  virtual_network_name = ""vnet-main-7b""
+  address_prefixes     = [""10.4.2.0/24""]
+}"
+6.log::p41,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-1o""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-xr""
+
+  ip_configuration {
+    name = ""internal-wk""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-8r""
+  resource_group_name = ""rg-prod-eastus-2y""
+  virtual_network_name = ""vnet-main-kc""
+  address_prefixes     = [""10.4.3.0/24""]
+}
+# eof
+"
+6.log::p42,6.log,1,"
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-mf""
+  location = ""japaneast""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-5l""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}
+# eof
+"
+6.log::p43,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-di""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-eq""
+
+  ip_configuration {
+    name = ""internal-fb""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-85""
+  resource_group_name = ""rg-prod-eastus-p8""
+  virtual_network_name = ""vnet-main-63""
+  address_prefixes     = [""10.8.8.0/24""]
+}
+# eof
+"
+6.log::p44,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5r""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-do""
+
+  ip_configuration {
+    name = ""internal-qi""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-vb""
+  resource_group_name = ""rg-prod-eastus-kv""
+  virtual_network_name = ""vnet-main-4y""
+  address_prefixes     = [""10.7.7.0/24""]
+}
+# eof
+"
+6.log::p45,6.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-bb""
+  location = ""uksouth""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-un""
+  address_space       = [""10.4.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-kn""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.6.5.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-qt""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}
+# eof
+"
+6.log::p46,6.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-71""
+  location = ""uksouth""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-hs""
+  address_space       = [""10.6.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-sb""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.5.8.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-el""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-rq""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}"
+6.log::p47,6.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-90""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-km""
+
+  ip_configuration {
+    name = ""internal-3t""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-zk""
+  resource_group_name = ""rg-prod-eastus-3n""
+  virtual_network_name = ""vnet-main-y9""
+  address_prefixes     = [""10.2.6.0/24""]
+}"
+7.log::p00,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-82""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-1u""
+  address_space       = [""10.0.9.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-zv""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.7.4.0/24""]
+}"
+7.log::p01,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-b8""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-da""
+
+  ip_configuration {
+    name = ""internal-lf""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-yo""
+  resource_group_name = ""rg-prod-eastus-17""
+  virtual_network_name = ""vnet-main-50""
+  address_prefixes     = [""10.2.3.0/24""]
+}"
+7.log::p02,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-8q""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-tt""
+  address_space       = [""10.7.8.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-y5""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.6.5.0/24""]
+}
+# eof
+"
+7.log::p03,7.log,1,"
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-kk""
+  location = ""japaneast""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-79""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}"
+7.log::p04,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-m7""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-2j""
+
+  ip_configuration {
+    name = ""internal-ey""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-n9""
+  resource_group_name = ""rg-prod-eastus-38""
+  virtual_network_name = ""vnet-main-2k""
+  address_prefixes     = [""10.5.7.0/24""]
+}
+# eof
+"
+7.log::p05,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ht""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-7z""
+
+  ip_configuration {
+    name = ""internal-ew""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-vi""
+  resource_group_name = ""rg-prod-eastus-yt""
+  virtual_network_name = ""vnet-main-wb""
+  address_prefixes     = [""10.7.3.0/24""]
+}
+# eof
+"
+7.log::p06,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-x5""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-rx""
+  address_space       = [""10.0.8.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-1k""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.6.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-kc""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}
+# eof
+"
+7.log::p07,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-9o""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-r7""
+  address_space       = [""10.2.6.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-87""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.0.0/24""]
+}"
+7.log::p08,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-s6""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-es""
+  address_space       = [""10.5.4.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-j3""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.7.8.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-l0""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-xz""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}"
+7.log::p09,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-g4""
+  location = ""uksouth""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-63""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}
+# eof
+"
+7.log::p10,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-7a""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-nq""
+  address_space       = [""10.2.2.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-jl""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.7.5.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-uu""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-jm""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+# eof
+"
+7.log::p11,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-w7""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-nh""
+  address_space       = [""10.6.8.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-8r""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.4.1.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-q9""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}"
+7.log::p12,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-1y""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-v2""
+
+  ip_configuration {
+    name = ""internal-st""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-n7""
+  resource_group_name = ""rg-prod-eastus-e3""
+  virtual_network_name = ""vnet-main-6h""
+  address_prefixes     = [""10.8.3.0/24""]
+}"
+7.log::p13,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-zr""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-6q""
+
+  ip_configuration {
+    name = ""internal-ce""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-ou""
+  resource_group_name = ""rg-prod-eastus-uy""
+  virtual_network_name = ""vnet-main-la""
+  address_prefixes     = [""10.1.3.0/24""]
+}"
+7.log::p14,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-97""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-c7""
+  address_space       = [""10.6.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-bo""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.8.0/24""]
+}"
+7.log::p15,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-56""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-ny""
+  address_space       = [""10.6.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-xt""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.6.7.0/24""]
+}"
+7.log::p16,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-0i""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-aa""
+
+  ip_configuration {
+    name = ""internal-ky""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-tt""
+  resource_group_name = ""rg-prod-eastus-3i""
+  virtual_network_name = ""vnet-main-mj""
+  address_prefixes     = [""10.8.2.0/24""]
+}
+# eof
+"
+7.log::p17,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-vq""
+  location = ""westeurope""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-y5""
+  address_space       = [""10.3.3.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-ib""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.1.0/24""]
+}
+# eof
+"
+7.log::p18,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-30""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-lv""
+  address_space       = [""10.2.8.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-yl""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.4.3.0/24""]
+}"
+7.log::p19,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-kc""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-85""
+
+  ip_configuration {
+    name = ""internal-6w""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-pr""
+  resource_group_name = ""rg-prod-eastus-97""
+  virtual_network_name = ""vnet-main-y2""
+  address_prefixes     = [""10.3.6.0/24""]
+}
+# eof
+"
+7.log::p20,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-kz""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-36""
+  address_space       = [""10.8.7.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-u8""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.3.3.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-ue""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}
+# eof
+"
+7.log::p21,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-0g""
+  location = ""westeurope""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-jy""
+  address_space       = [""10.7.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-v5""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.8.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-g1""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-0u""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+# eof
+"
+7.log::p22,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-6z""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-zo""
+  address_space       = [""10.3.3.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-il""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.7.0/24""]
+}"
+7.log::p23,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-m5""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-q2""
+
+  ip_configuration {
+    name = ""internal-01""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-lh""
+  resource_group_name = ""rg-prod-eastus-lb""
+  virtual_network_name = ""vnet-main-50""
+  address_prefixes     = [""10.4.4.0/24""]
+}"
+7.log::p24,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-hi""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-ui""
+
+  ip_configuration {
+    name = ""internal-t7""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-m1""
+  resource_group_name = ""rg-prod-eastus-r0""
+  virtual_network_name = ""vnet-main-0q""
+  address_prefixes     = [""10.4.2.0/24""]
+}"
+7.log::p25,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-4c""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-3b""
+  address_space       = [""10.8.0.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-ae""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.8.0.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-wc""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}"
+7.log::p26,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-w7""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-6x""
+
+  ip_configuration {
+    name = ""internal-at""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-oa""
+  resource_group_name = ""rg-prod-eastus-zt""
+  virtual_network_name = ""vnet-main-ks""
+  address_prefixes     = [""10.0.9.0/24""]
+}
+# eof
+"
+7.log::p27,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-jm""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-2c""
+  address_space       = [""10.3.3.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-8q""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.9.8.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-iz""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}"
+7.log::p28,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-nr""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-wz""
+  address_space       = [""10.0.1.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-c4""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.6.6.0/24""]
+}"
+7.log::p29,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-6y""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-uj""
+  address_space       = [""10.8.0.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-7y""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.3.3.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-kt""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-xg""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""eastus""
+  }
+}"
+7.log::p30,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-fi""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-4o""
+
+  ip_configuration {
+    name = ""internal-6l""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-1f""
+  resource_group_name = ""rg-prod-eastus-90""
+  virtual_network_name = ""vnet-main-s9""
+  address_prefixes     = [""10.1.4.0/24""]
+}"
+7.log::p31,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-8o""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-1b""
+
+  ip_configuration {
+    name = ""internal-j9""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-rm""
+  resource_group_name = ""rg-prod-eastus-7p""
+  virtual_network_name = ""vnet-main-yx""
+  address_prefixes     = [""10.9.9.0/24""]
+}
+# eof
+"
+7.log::p32,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-zw""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-0l""
+  address_space       = [""10.1.4.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-da""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.6.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-lm""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-je""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}"
+7.log::p33,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-dt""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-v2""
+
+  ip_configuration {
+    name = ""internal-5a""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-o2""
+  resource_group_name = ""rg-prod-eastus-0u""
+  virtual_network_name = ""vnet-main-9i""
+  address_prefixes     = [""10.1.0.0/24""]
+}
+# eof
+"
+7.log::p34,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-rc""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-pp""
+
+  ip_configuration {
+    name = ""internal-rc""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-ji""
+  resource_group_name = ""rg-prod-eastus-wv""
+  virtual_network_name = ""vnet-main-hd""
+  address_prefixes     = [""10.4.4.0/24""]
+}
+# eof
+"
+7.log::p35,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-pp""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-3x""
+
+  ip_configuration {
+    name = ""internal-vk""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-vz""
+  resource_group_name = ""rg-prod-eastus-rg""
+  virtual_network_name = ""vnet-main-ol""
+  address_prefixes     = [""10.6.5.0/24""]
+}
+# eof
+"
+7.log::p36,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-eu""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-vt""
+
+  ip_configuration {
+    name = ""internal-yt""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-8q""
+  resource_group_name = ""rg-prod-eastus-zp""
+  virtual_network_name = ""vnet-main-ky""
+  address_prefixes     = [""10.6.5.0/24""]
+}
+# eof
+"
+7.log::p37,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-2c""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-9r""
+
+  ip_configuration {
+    name = ""internal-os""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-7y""
+  resource_group_name = ""rg-prod-eastus-t2""
+  virtual_network_name = ""vnet-main-m6""
+  address_prefixes     = [""10.2.6.0/24""]
+}
+# eof
+"
+7.log::p38,7.log,1,"
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-xm""
+  location = ""westeurope""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-xb""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}
+# eof
+"
+7.log::p39,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-dh""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-0u""
+
+  ip_configuration {
+    name = ""internal-yh""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-nq""
+  resource_group_name = ""rg-prod-eastus-yy""
+  virtual_network_name = ""vnet-main-f9""
+  address_prefixes     = [""10.1.0.0/24""]
+}"
+7.log::p40,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-m2""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-sm""
+  address_space       = [""10.1.2.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-dz""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.5.4.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-qc""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-bz""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}"
+7.log::p41,7.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-fu""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-8i""
+  address_space       = [""10.3.8.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-og""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.8.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-xp""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}"
+7.log::p42,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-nz""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-h1""
+
+  ip_configuration {
+    name = ""internal-3c""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-d5""
+  resource_group_name = ""rg-prod-eastus-gl""
+  virtual_network_name = ""vnet-main-qj""
+  address_prefixes     = [""10.9.6.0/24""]
+}
+# eof
+"
+7.log::p43,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-vm""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-4w""
+
+  ip_configuration {
+    name = ""internal-3z""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-kw""
+  resource_group_name = ""rg-prod-eastus-de""
+  virtual_network_name = ""vnet-main-ek""
+  address_prefixes     = [""10.9.6.0/24""]
+}"
+7.log::p44,7.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-up""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-rt""
+
+  ip_configuration {
+    name = ""internal-77""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-gg""
+  resource_group_name = ""rg-prod-eastus-kg""
+  virtual_network_name = ""vnet-main-4w""
+  address_prefixes     = [""10.9.2.0/24""]
+}
+# eof
+"
+7.log::p45,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-xo""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-rz""
+
+  ip_configuration {
+    name = ""internal-pg""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-u2""
+  resource_group_name = ""rg-prod-eastus-hb""
+  virtual_network_name = ""vnet-main-ik""
+  address_prefixes     = [""10.8.8.0/24""]
+}"
+7.log::p46,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-uj""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-t9""
+
+  ip_configuration {
+    name = ""internal-t1""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-1p""
+  resource_group_name = ""rg-prod-eastus-hp""
+  virtual_network_name = ""vnet-main-0x""
+  address_prefixes     = [""10.8.1.0/24""]
+}
+# eof
+"
+7.log::p47,7.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-p9""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-1i""
+
+  ip_configuration {
+    name = ""internal-3v""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-mz""
+  resource_group_name = ""rg-prod-eastus-wf""
+  virtual_network_name = ""vnet-main-fh""
+  address_prefixes     = [""10.5.1.0/24""]
+}"
+8.log::p00,8.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-lz""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-kj""
+
+  ip_configuration {
+    name = ""internal-49""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-yd""
+  resource_group_name = ""rg-prod-eastus-82""
+  virtual_network_name = ""vnet-main-79""
+  address_prefixes     = [""10.8.2.0/24""]
+}"
+8.log::p01,8.log,1,"
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-1y""
+  location = ""japaneast""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-ru""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}
+# eof
+"
+8.log::p02,8.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-z5""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-qr""
+  address_space       = [""10.1.6.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-u5""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.8.4.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-4d""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-8w""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+# eof
+"
+8.log::p03,8.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-j3""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-mu""
+
+  ip_configuration {
+    name = ""internal-ur""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-my""
+  resource_group_name = ""rg-prod-eastus-bd""
+  virtual_network_name = ""vnet-main-2q""
+  address_prefixes     = [""10.3.7.0/24""]
+}
+# eof
+"
+8.log::p04,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5k""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-55""
+
+  ip_configuration {
+    name = ""internal-dm""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-cx""
+  resource_group_name = ""rg-prod-eastus-xb""
+  virtual_network_name = ""vnet-main-w0""
+  address_prefixes     = [""10.3.2.0/24""]
+}"
+8.log::p05,8.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-vs""
+  location = ""westeurope""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-qa""
+  address_space       = [""10.3.7.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-me""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.2.0/24""]
+}
+# eof
+"
+8.log::p06,8.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-n0""
+  location = ""japaneast""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-dl""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}"
+8.log::p07,8.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-ax""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-p0""
+  address_space       = [""10.2.1.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-wf""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.8.9.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-oy""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}
+# eof
+"
+8.log::p08,8.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-lf""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-jd""
+  address_space       = [""10.9.6.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-tv""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.5.6.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-v2""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-y4""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}"
+8.log::p09,8.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-22""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-in""
+
+  ip_configuration {
+    name = ""internal-iw""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-c5""
+  resource_group_name = ""rg-prod-eastus-am""
+  virtual_network_name = ""vnet-main-ln""
+  address_prefixes     = [""10.4.0.0/24""]
+}"
+8.log::p10,8.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-va""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-h7""
+
+  ip_configuration {
+    name = ""internal-8o""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-kz""
+  resource_group_name = ""rg-prod-eastus-1p""
+  virtual_network_name = ""vnet-main-ox""
+  address_prefixes     = [""10.1.0.0/24""]
+}
+# eof
+"
+8.log::p11,8.log,1,"# generated 2025-08-08T07:16:18.528880+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-lv""
+  location = ""westeurope""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-1x""
+  address_space       = [""10.8.3.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-xl""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.8.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-p8""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-ii""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""eastus""
+  }
+}"
+8.log::p12,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ae""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-ar""
+
+  ip_configuration {
+    name = ""internal-ms""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-3j""
+  resource_group_name = ""rg-prod-eastus-n0""
+  virtual_network_name = ""vnet-main-50""
+  address_prefixes     = [""10.2.1.0/24""]
+}
+# eof
+"
+8.log::p13,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-zu""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-cq""
+
+  ip_configuration {
+    name = ""internal-mr""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-un""
+  resource_group_name = ""rg-prod-eastus-jd""
+  virtual_network_name = ""vnet-main-u0""
+  address_prefixes     = [""10.1.4.0/24""]
+}"
+8.log::p14,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-nf""
+  location = ""westeurope""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-74""
+  address_space       = [""10.3.0.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-t6""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.7.5.0/24""]
+}
+# eof
+"
+8.log::p15,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ue""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-yb""
+
+  ip_configuration {
+    name = ""internal-is""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-bo""
+  resource_group_name = ""rg-prod-eastus-55""
+  virtual_network_name = ""vnet-main-1l""
+  address_prefixes     = [""10.4.1.0/24""]
+}
+# eof
+"
+8.log::p16,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-0i""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-n8""
+
+  ip_configuration {
+    name = ""internal-91""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-0t""
+  resource_group_name = ""rg-prod-eastus-2f""
+  virtual_network_name = ""vnet-main-7a""
+  address_prefixes     = [""10.9.4.0/24""]
+}"
+8.log::p17,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-dt""
+  location = ""japaneast""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-ir""
+  address_space       = [""10.5.0.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-c9""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.6.4.0/24""]
+}"
+8.log::p18,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-q0""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-us""
+
+  ip_configuration {
+    name = ""internal-wo""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-vc""
+  resource_group_name = ""rg-prod-eastus-xe""
+  virtual_network_name = ""vnet-main-k4""
+  address_prefixes     = [""10.6.5.0/24""]
+}
+# eof
+"
+8.log::p19,8.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-ff""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-qo""
+  address_space       = [""10.3.2.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-t8""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.9.1.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-hl""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-je""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}"
+8.log::p20,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-z8""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-ob""
+  address_space       = [""10.3.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-k3""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.1.0/24""]
+}
+# eof
+"
+8.log::p21,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-iq""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-2f""
+
+  ip_configuration {
+    name = ""internal-a3""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-9e""
+  resource_group_name = ""rg-prod-eastus-3n""
+  virtual_network_name = ""vnet-main-wx""
+  address_prefixes     = [""10.8.8.0/24""]
+}"
+8.log::p22,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-d4""
+  location = ""uksouth""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-3e""
+  address_space       = [""10.1.3.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-7b""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.7.2.0/24""]
+}"
+8.log::p23,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-yg""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-hg""
+
+  ip_configuration {
+    name = ""internal-k5""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-bw""
+  resource_group_name = ""rg-prod-eastus-ik""
+  virtual_network_name = ""vnet-main-ot""
+  address_prefixes     = [""10.0.6.0/24""]
+}
+# eof
+"
+8.log::p24,8.log,1,"
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-x2""
+  location = ""uksouth""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-i9""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}"
+8.log::p25,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-2m""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-ul""
+
+  ip_configuration {
+    name = ""internal-ja""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-vb""
+  resource_group_name = ""rg-prod-eastus-3k""
+  virtual_network_name = ""vnet-main-3q""
+  address_prefixes     = [""10.7.8.0/24""]
+}"
+8.log::p26,8.log,1,"resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-37""
+  location = ""eastus2""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-c9""
+  address_space       = [""10.3.3.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-h4""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.4.8.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-2m""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-44""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}"
+8.log::p27,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-zm""
+  location = ""uksouth""
+  resource_group_name = ""rg-prod-eastus-uf""
+
+  ip_configuration {
+    name = ""internal-84""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-38""
+  resource_group_name = ""rg-prod-eastus-tg""
+  virtual_network_name = ""vnet-main-bc""
+  address_prefixes     = [""10.9.0.0/24""]
+}
+# eof
+"
+8.log::p28,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-3m""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-g2""
+
+  ip_configuration {
+    name = ""internal-5c""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-fz""
+  resource_group_name = ""rg-prod-eastus-fd""
+  virtual_network_name = ""vnet-main-sn""
+  address_prefixes     = [""10.9.3.0/24""]
+}"
+8.log::p29,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ke""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-f8""
+
+  ip_configuration {
+    name = ""internal-28""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""uksouth""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-xg""
+  resource_group_name = ""rg-prod-eastus-8y""
+  virtual_network_name = ""vnet-main-72""
+  address_prefixes     = [""10.1.5.0/24""]
+}
+# eof
+"
+8.log::p30,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-08""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-8o""
+
+  ip_configuration {
+    name = ""internal-98""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-bv""
+  resource_group_name = ""rg-prod-eastus-78""
+  virtual_network_name = ""vnet-main-hu""
+  address_prefixes     = [""10.2.2.0/24""]
+}
+# eof
+"
+8.log::p31,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-w8""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-3y""
+
+  ip_configuration {
+    name = ""internal-0m""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-ah""
+  resource_group_name = ""rg-prod-eastus-ym""
+  virtual_network_name = ""vnet-main-2z""
+  address_prefixes     = [""10.5.2.0/24""]
+}
+# eof
+"
+8.log::p32,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-td""
+  location = ""eastus""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-r5""
+  address_space       = [""10.6.7.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-xy""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.6.5.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-fc""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}
+# eof
+"
+8.log::p33,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-fc""
+  location = ""uksouth""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-79""
+  address_space       = [""10.1.5.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-m9""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.2.6.0/24""]
+}
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic-ok-6z""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  ip_configuration {
+    name = ""internal-px""
+    subnet_id                     = azurerm_subnet.subnet.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+# eof
+"
+8.log::p34,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-9o""
+  location = ""uksouth""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-t7""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}
+# eof
+"
+8.log::p35,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-do""
+  location = ""eastus""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-tr""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}
+# eof
+"
+8.log::p36,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-ha""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-gk""
+
+  ip_configuration {
+    name = ""internal-c4""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-lo""
+  resource_group_name = ""rg-prod-eastus-rx""
+  virtual_network_name = ""vnet-main-dt""
+  address_prefixes     = [""10.9.7.0/24""]
+}
+# eof
+"
+8.log::p37,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-pj""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-4u""
+
+  ip_configuration {
+    name = ""internal-fz""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-dy""
+  resource_group_name = ""rg-prod-eastus-3o""
+  virtual_network_name = ""vnet-main-1i""
+  address_prefixes     = [""10.0.4.0/24""]
+}
+# eof
+"
+8.log::p38,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-5r""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-c6""
+
+  ip_configuration {
+    name = ""internal-zs""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-62""
+  resource_group_name = ""rg-prod-eastus-yw""
+  virtual_network_name = ""vnet-main-e1""
+  address_prefixes     = [""10.7.9.0/24""]
+}"
+8.log::p39,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-demo-h3""
+  location = ""uksouth""
+}
+
+resource ""azurerm_virtual_network"" ""vnet"" {
+  name = ""vnet-main-fv""
+  address_space       = [""10.0.6.0/24""]
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet"" ""subnet"" {
+  name = ""subnet-app-l0""
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = [""10.1.6.0/24""]
+}
+resource ""azurerm_route_table"" ""rt"" {
+  name = ""rt-ok-3d""
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+resource ""azurerm_subnet_route_table_association"" ""assoc"" {
+  subnet_id      = azurerm_subnet.subnet.id
+  route_table_id = azurerm_route_table.rt.id
+}
+# eof
+"
+8.log::p40,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-7a""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-zv""
+
+  ip_configuration {
+    name = ""internal-2e""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-fu""
+  resource_group_name = ""rg-prod-eastus-u8""
+  virtual_network_name = ""vnet-main-dd""
+  address_prefixes     = [""10.8.7.0/24""]
+}"
+8.log::p41,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-xu""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-rg""
+
+  ip_configuration {
+    name = ""internal-ow""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""japaneast""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-yo""
+  resource_group_name = ""rg-prod-eastus-o5""
+  virtual_network_name = ""vnet-main-yb""
+  address_prefixes     = [""10.4.6.0/24""]
+}
+# eof
+"
+8.log::p42,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-44""
+  location = ""westeurope""
+  resource_group_name = ""rg-prod-eastus-y9""
+
+  ip_configuration {
+    name = ""internal-ik""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-01""
+  resource_group_name = ""rg-prod-eastus-l0""
+  virtual_network_name = ""vnet-main-vd""
+  address_prefixes     = [""10.4.4.0/24""]
+}
+# eof
+"
+8.log::p43,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-3s""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-fl""
+
+  ip_configuration {
+    name = ""internal-se""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-45""
+  resource_group_name = ""rg-prod-eastus-bg""
+  virtual_network_name = ""vnet-main-34""
+  address_prefixes     = [""10.8.5.0/24""]
+}"
+8.log::p44,8.log,1,"
+resource ""azurerm_resource_group"" ""rg"" {
+  name = ""rg-storage-ok-j3""
+  location = ""eastus""
+}
+
+resource ""azurerm_storage_account"" ""sa"" {
+  name = ""storaaaaaaaa01-sw""
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = ""Standard""
+  account_replication_type = ""LRS""
+}
+# eof
+"
+8.log::p45,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-g5""
+  location = ""eastus2""
+  resource_group_name = ""rg-prod-eastus-vm""
+
+  ip_configuration {
+    name = ""internal-f6""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""eastus2""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-0y""
+  resource_group_name = ""rg-prod-eastus-kn""
+  virtual_network_name = ""vnet-main-fu""
+  address_prefixes     = [""10.9.7.0/24""]
+}"
+8.log::p46,8.log,1,"
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-a2""
+  location = ""japaneast""
+  resource_group_name = ""rg-prod-eastus-1a""
+
+  ip_configuration {
+    name = ""internal-6x""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-va""
+  resource_group_name = ""rg-prod-eastus-j2""
+  virtual_network_name = ""vnet-main-k8""
+  address_prefixes     = [""10.6.8.0/24""]
+}"
+8.log::p47,8.log,1,"# generated 2025-08-08T07:16:18.530257+00:00
+
+resource ""azurerm_network_interface"" ""nic"" {
+  name = ""vmnic01-qy""
+  location = ""eastus""
+  resource_group_name = ""rg-prod-eastus-3o""
+
+  ip_configuration {
+    name = ""internal-ds""
+    subnet_id                     = azurerm_subnet.subnet-prod.id
+    private_ip_address_allocation = ""westeurope""
+  }
+}
+
+resource ""azurerm_subnet"" ""subnet-prod"" {
+  name = ""subnet-prod-x4""
+  resource_group_name = ""rg-prod-eastus-nx""
+  virtual_network_name = ""vnet-main-vk""
+  address_prefixes     = [""10.4.3.0/24""]
+}"

@@ -1,0 +1,1 @@
+2025-08-08T06:11:03.112Z [ERROR] azurerm_route_table.route: Error creating/Updating Route Table "rt-app" (Resource Group "rg-app-eastus"): Code="ResourceNotFound" Message="Route table not found or association invalid for subnet 'web-subnet'."

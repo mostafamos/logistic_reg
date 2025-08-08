@@ -1,0 +1,4 @@
+2025-08-08T07:05:44.001Z [INFO] Terraform has been successfully initialized!
+2025-08-08T07:05:44.889Z [INFO] azurerm_storage_account.sa: Plan: 1 to add, 0 to change, 0 to destroy.
+2025-08-08T07:05:50.212Z [INFO] azurerm_storage_account.sa: Creation complete after 5s [id=/subscriptions/.../storageAccounts/sademo001]
+2025-08-08T07:05:50.213Z [INFO] Apply complete! Resources: 1 added, 0 changed, 0 destroyed.

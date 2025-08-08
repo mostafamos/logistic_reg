@@ -1,0 +1,1 @@
+2025-08-08T05:22:44.901Z [ERROR] azurerm_network_interface.nic: Error creating Network Interface "vmnic01" (Resource Group "rg-prod-eastus"): network.InterfacesClient#CreateOrUpdate: StatusCode=400 -- Original Error: Code="SubnetNotFound" Message="Cannot find subnet named 'subnet-prod' in virtual network 'vnet-main'."

@@ -1,0 +1,33 @@
+[project]
+name = "liquibase"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mostafa hassan",email = "mostafa@allelez.com"}
+]
+package-mode = false
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic (>=2.11.7,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "xmltodict (>=0.14.2,<0.15.0)",
+    "pydantic-settings (>=2.10.1,<3.0.0)",
+    "google-generativeai (>=0.8.5,<0.9.0)",
+    "pandas (>=2.3.1,<3.0.0)",
+    "scikit-learn (>=1.7.1,<2.0.0)",
+    "numpy (>=2.3.2,<3.0.0)",
+    "scipy (>=1.16.1,<2.0.0)",
+    "joblib (>=1.5.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+ruff = "^0.12.8"
+

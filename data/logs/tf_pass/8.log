@@ -1,0 +1,4 @@
+2025-08-08T07:10:02.340Z [INFO] Running terraform validate...
+2025-08-08T07:10:02.741Z [INFO] Success! The configuration is valid.
+2025-08-08T07:10:03.102Z [INFO] No changes. Your infrastructure matches the configuration.
+2025-08-08T07:10:03.103Z [INFO] Apply complete! Resources: 0 added, 0 changed, 0 destroyed.

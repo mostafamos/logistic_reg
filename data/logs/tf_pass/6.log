@@ -1,0 +1,6 @@
+2025-08-08T07:01:10.123Z [INFO] Terraform version: 1.8.5
+2025-08-08T07:01:11.002Z [INFO] Initializing the backend...
+2025-08-08T07:01:12.441Z [INFO] Initializing provider plugins...
+2025-08-08T07:01:15.017Z [INFO] Plan: 1 to add, 0 to change, 0 to destroy.
+2025-08-08T07:01:18.559Z [INFO] azurerm_resource_group.rg: Creation complete after 3s [id=/subscriptions/.../resourceGroups/rg-demo]
+2025-08-08T07:01:18.900Z [INFO] Apply complete! Resources: 1 added, 0 changed, 0 destroyed.

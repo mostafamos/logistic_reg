@@ -1,0 +1,20 @@
+# Ignore Poetry virtual environment
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environment files
+.env
+
+# qodo-specific folder
+.qodo/
+
+# OS-generated files
+.DS_Store
+Thumbs.db

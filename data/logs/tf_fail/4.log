@@ -1,0 +1,1 @@
+2025-08-08T06:20:55.903Z [ERROR] azurerm_linux_virtual_machine.vm: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=403 -- Original Error: Code="QuotaExceeded" Message="Regional standardDSv5Family vCPU limit exceeded in eastus2. Current limit: 10, Requested: 16."
