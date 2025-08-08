@@ -1,1 +1,0 @@
-poetry run python main.py "Add a column email of type VARCHAR(255) to the users table"
